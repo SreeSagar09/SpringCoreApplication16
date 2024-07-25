@@ -1,0 +1,29 @@
+A Program to demonstrate the use of @Component annotation:
+Programs:
+* MaterialComponent.java
+* ProductComponent.java
+* ItemComponent.java
+* Test.java
+Note:
+* @Component annotation is used make a class as component and it can be auto detected when java based configuration and xml based configuration.
+* The @Component annotation can be used at class level.
+* The @Component annotation can accept one attribute as value by using value attribute we can manually define the component name.
+* <context:component-scan base-package="com.app, com.app1"/> tag is used to auto scan the components in the given base Package.
+* Multiple base packages are configured with comma seperator.
+Output:
+Number of Beans: 8
+Beans Names:
+materialComponent
+PRODUCTCOMPONENT
+itemComponent
+org.springframework.context.annotation.internalConfigurationAnnotationProcessor
+org.springframework.context.annotation.internalAutowiredAnnotationProcessor
+org.springframework.context.annotation.internalCommonAnnotationProcessor
+org.springframework.context.event.internalEventListenerProcessor
+org.springframework.context.event.internalEventListenerFactory
+ProductComponent Bean
+ProductComponent [productName=Bicycle, quantity=10, price=120.0]
+MaterialComponent Bean
+MaterialComponent [materialName=Paper, quantity=12, price=120.0]
+ItemComponent Bean
+ItemComponent [itemName=Book, quantity=15, price=25.0]
